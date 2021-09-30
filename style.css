@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap");
+:root {
+  --bg-color: rgb(224, 213, 213);
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: var(--bg-color);
+  padding: 0.5rem;
+  border-bottom-left-radius: 5rem;
+}
+nav h1 {
+  margin-top: 0;
+  font-size: 40px;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+nav ul {
+  text-align: right;
+}
+nav ul li {
+  display: inline;
+  margin: 1rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+.top-img {
+  width: 50%;
+  height: 250px;
+  margin: 3rem auto;
+  display: block;
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.less-size {
+  font-size: 16px;
+}
+.color-gray {
+  color: gray;
+  font-size: 30px;
+}
+.home-div {
+  width: 700px;
+  padding: 1rem;
+  margin: 2rem auto;
+  border-radius: 2rem;
+}
+.home-div h3 {
+  font-size: 25px;
+}
+.home-div p {
+  font-size: 18px;
+}
+.home-div:nth-of-type(odd) {
+  background-color: var(--bg-color);
+}
+.home-div button a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+.home-div button {
+  padding: 0.4rem;
+  font-size: 14px;
+  border-radius: 0.3rem;
+  background-color: white;
+}
+.project-btn {
+  background-color: var(--bg-color) !important;
+}
+.home-div button:hover,
+.home-div a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: var(--bg-color);
+  height: 10%;
+  color: black;
+  padding: 2.5rem;
+  text-align: center;
+  margin-top: 3rem;
+  border-top-right-radius: 5rem;
+}
+footer div {
+  transform: translateX(1.5rem);
+}
+footer li {
+  display: inline;
+  margin: 1rem;
+  cursor: pointer;
+}
+footer a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+.project-h2 .color-gray {
+  font-size: 40px;
+  margin-top: 0;
+}
+.project-ol li {
+  width: 700px;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.project-ol li:nth-of-type(odd) {
+  background-color: var(--bg-color);
+}
+.project-ol h3 {
+  margin-bottom: 0;
+}
+.project-ol span {
+  font-size: 14px;
+}
+.live {
+  background-color: black;
+}
+.source {
+  color: black;
+}
+.project-ol a {
+  text-decoration: none;
+  color: white;
+}
+.project-ol .source a {
+  color: black;
+}
+.project-ol a:hover {
+  text-decoration: underline;
+}
+.project-ol button {
+  padding: 0.3rem;
+  width: 100px;
+  margin: auto 0.3rem;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+}
