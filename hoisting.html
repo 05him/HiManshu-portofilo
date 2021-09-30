@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiManshu | Blogs</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <h1>HiManshu ;)</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+    </nav>
+
+    <h3 class="new-h3">Hoisting</h3>
+
+    <div class="blog-div">
+      <p>
+        Hello eyeryone, this is HiManshu a web-dev enthusiast and yess this is
+        my first blog.<br />
+        In this blog I’m going to talk about HOISTING. For some peoples it might
+        not be the new thing but for newbies like me it is a big thing.
+        <br /><br />
+        After listening the word hoisting, the first things come to our mind is
+        what is hoisting?, how does it works?, what’s the relation with the JS?
+        And many more questions, but don’t worry I’m here to tell you guys the
+        best I can explain. So lets get started.<br />
+        First of all Lets talk about how the Javascript file works(or compiles)
+        because that’s the main part. First let me tell You that “Everything
+        inside JavaScript happens inside an EXECUTION CONTEXT”, you must be
+        wondering what is a EXECUTION CONTEXT, so execution context in short we
+        can say is the place of execution of javascript where all the functions
+        variable executions happens that particular environment is called
+        Execution Context. <br />
+        Further Execution Context have 2 you can say columns, the first one is
+        Memory(aka variable environment) and the second one is code(aka thread
+        of execution).<br />
+        As the name of memory also knows variable environment clears that it is
+        some relation with variable , variable environment is the execution
+        space which happens before the execution of the single line of the
+        javascript file, in simplest or lamest term we can say that variable
+        environment is the execution space where the variables get there place
+        before the execution of js code.<br />
+        Initially in variable environment variables are just declared they are
+        not initialized with any kind of input or data the initialization
+        process occurs in the code (aka thread of execution) environment in the
+        thread of execution where javascript code run synchronously line by line
+        from top to bottom and then assign the values to variable line by line ,
+        now before the execution of code part and after the execution of memory
+        part all kind of variables holds a specific value names “undefined”.<br />
+        Now lets come back to hoisting , as I said above javascript code runs
+        line by line but there is one more beautiful thing inside it and that is
+        we can use the variable before its initialization(not all type of
+        variables) variables defined with keyword “var” can be used even before
+        its initialization because var is in the same execution context of the
+        program, but variable defined with keyword “let” or “const” cant be used
+        before their initialization because they have a different execution
+        context , but if u try to console.log a variable before its
+        initialization defined with “let” or “const” then it wont show any error
+        it will print the word “undefined” because as I stated above that before
+        the execution of code and after the execution of memory part variable
+        hold the value named “undefined”.<br />
+        That’s all from my side, Hope you find it useful.<br />
+      </p>
+    </div>
+
+    <footer>
+      <div>Made with ❤️ by HiManshu ;)</div>
+      <ul>
+        <li><a href="https://github.com/05him">Github</a></li>
+        <li><a href="https://twitter.com/HiManshu_0_">Twitter</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/himanshu-1212b3200/">LinkedIn</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
