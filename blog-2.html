@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HiManshu | Blogs</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <h1>HiManshu ;)</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+      </ul>
+    </nav>
+    <h3 class="new-h3">Scope</h3>
+
+    <div class="blog-div">
+      <p>
+        Here in this blog we will be talking about the Scope in JavaScript.  We can also term scope as “variable visibility” , scope basically means “The location where a variable is define indicates where we have access to that variable”. Scope is basically divided into three parts which are:-
+        <ol>
+        <li><h3>Block Scope:-</h3>
+        In the daily use of Javascript we must have used the keyword let/const/var to define a variable ,  among these three let and const are block scope variable and var have a global scope. This means whenever we define a variable inside a block , (i.e. inside{} ) using let or const, that variable will have a block scope which means it cant be accessed outside those parenthesis, but if the variable is defines using the keyword var then it means that the variable will have a globa scope, lets understand this via examples:-<br><br>
+        <u>Declaring variable using let</u><br>
+        {<br>
+        Let x=20;<br>
+        }   <br>
+        Console.log(x); // will show error <br>
+        // cannot access x outside the block(parenthesis)<br>
+        <u>Declaring variable using var </u><br>
+        {<br>
+        Var x=60;<br>
+        }<br>
+        Console.log(x) // this will show the value of x(i.e. 20) in the console<br>
+        // can access the variable outside the scope<br>
+        </li>
+        <li><h3>Function  Scope:-</h3>
+        Variables which are defined inside a function have function scope, which means those variable cannot be accessed outside the function. Now inside the function it does not means weather the declare a variable using let/const or var it will have a function scope only<br><br>
+        <u>variable defined using let</u><br>
+        Function temp(){<br>
+        Let X=20;  // cant be accessed outside<br>
+        }<br>
+        Console.log(x) // will show error regarding x not defined <br>
+        <u>variable defined using var</u><br>
+        Function temp(){<br>
+        Var x=90; // cant be accessed outside the function<br>
+        }<br>
+        Console.log(x) // this will show an error regarding x not defined <br>
+        </li>
+        <li><h3>Global  Scope:-</h3>
+        Global scope means the variables which are defined  globally , not inside any function or not inside any block have a global scope, which means it can be accessed anywhere in the whole program doesn’t if the variable is defined using  let/const or var it ca be used anywhere. 
+        </li>
+        </ol>  
+
+
+      </p>
+    </div>
+
+    <footer>
+      <div>Made with ❤️ by HiManshu ;)</div>
+      <ul>
+        <li><a href="https://github.com/05him">Github</a></li>
+        <li><a href="https://twitter.com/HiManshu_0_">Twitter</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/himanshu-1212b3200/">LinkedIn</a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
